@@ -1,27 +1,75 @@
-# PlayWithNgrx
+<h1  align="center">
+	<img  width="100%"  src="https://i.imgur.com/6PxW4UH.gif"/>
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+<h3  align="center">🖥️ Brincando com NgRx</h3>
+<p  align="center">Projeto para testar as funcionalidades do NgRx</p>
 
-## Development server
+<p  align="center">
+	<img  src="https://img.shields.io/github/languages/count/rlucilio/play-with-ngrx?style=for-the-badge&logo=ghost&color=7ED957"/>
+	<img  src="https://img.shields.io/github/languages/top/rlucilio/play-with-ngrx?style=for-the-badge&logo=ghost&color=7ED957"/>
+	<img  src="https://img.shields.io/github/languages/code-size/rlucilio/play-with-ngrx?style=for-the-badge&logo=ghost&color=7ED957"/>
+	<img  src="https://img.shields.io/github/commit-activity/w/rlucilio/play-with-ngrx?style=for-the-badge&logo=ghost&color=7ED957"/>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p  align="center"> 
+	<a  href="#notebook_with_decorative_cover-stack">Stack</a> |
+	<a  href="#white_check_mark-funcionalidades">Funcionalidades</a> |
+	<a  href="#computer-como-rodar">Como rodar</a> |
+	<a  href="#man_technologist-autor">Autor</a>
+</p>
 
-## Code scaffolding
+<p align="center">
+<img  src=""/>
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :notebook_with_decorative_cover: Stack
+As seguintes ferramentas foram usadas na construção do projeto:
+<!--ts-->
+- 📌 [TypeScript](https://www.typescriptlang.org/)
+- 📌 [Angular](https://angular.io/)
+- 📌 [NgRx](https://ngrx.io/)
+- 📌 [SASS](https://sass-lang.com/)
+<!--te-->
 
-## Build
+## :white_check_mark: Funcionalidades
+- [] Implementar todas as funcionalidades
+## :computer: Como Rodar
+### Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Angular](https://angular.io/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+### 🎲 Rodando o Projeto
+```bash
+# Clone este repositório
+$ git clone <https://github.com/rlucilio/play-with-ngrx.git>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd play-with-ngrx
 
-## Running unit tests
+# Instale as dependências
+$ npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Execute a aplicação
+$ ng server
 
-## Running end-to-end tests
+# O app inciará na porta:4100 - acesse <http://localhost:4100>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## :man_technologist: Autor
+Renan Lucilio 💚  Code
 
-## Further help
+Entre em contato!
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="center">
+<a href="mailto:renanlucilio@gmail.com">
+	<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+<a href="https://www.linkedin.com/in/renan-lucilio-521ba513a">
+	<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+<a href="https://github.com/rlucilio">
+	<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
+

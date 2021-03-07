@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+button {
+    background-color: rgba(139, 26, 150, 0.822);
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
