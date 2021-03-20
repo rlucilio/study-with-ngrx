@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BooksComponent } from './states/books/books.component';
 import { BookCollectionComponent } from './states/book-collection/book-collection.component';
 import { ActionsComponent } from './actions/actions/actions.component';
+import * as fromScoreboard from './reducers/scoreboard.reducer';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ActionsComponent } from './actions/actions/actions.component';
     StoreModule.forRoot({
       count: counterReducer,
       books: booksReducer,
-      collections: collectionReducer
+      collections: collectionReducer,
+      game: fromScoreboard.reducer
     }),
     HttpClientModule
   ],
