@@ -10,13 +10,15 @@ import { booksReducer } from './states/ngrx/books.reducer';
 import { HttpClientModule } from '@angular/common/http';
 import { BooksComponent } from './states/books/books.component';
 import { BookCollectionComponent } from './states/book-collection/book-collection.component';
+import { ActionsComponent } from './actions/actions/actions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentTestComponent,
     BooksComponent,
-    BookCollectionComponent
+    BookCollectionComponent,
+    ActionsComponent
   ],
   imports: [
     BrowserModule,
