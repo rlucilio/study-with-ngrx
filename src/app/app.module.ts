@@ -12,6 +12,7 @@ import { BooksComponent } from './states/books/books.component';
 import { BookCollectionComponent } from './states/book-collection/book-collection.component';
 import { ActionsComponent } from './actions/actions/actions.component';
 import * as fromScoreboard from './reducers/scoreboard.reducer';
+import { SelectorsComponent } from './selectors/selectors.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import * as fromScoreboard from './reducers/scoreboard.reducer';
     ComponentTestComponent,
     BooksComponent,
     BookCollectionComponent,
-    ActionsComponent
+    ActionsComponent,
+    SelectorsComponent
   ],
   imports: [
     BrowserModule,
