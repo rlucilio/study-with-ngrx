@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { StoreModule } from '@ngrx/store';
 import { counterReducer } from 'src/app/basic/ngrx/counter.reducers';
 import { ComponentTestComponent } from './basic/component-test.component';
 import { booksReducer } from './states/ngrx/books.reducer';
@@ -13,6 +12,19 @@ import { BookCollectionComponent } from './states/book-collection/book-collectio
 import { ActionsComponent } from './actions/actions/actions.component';
 import * as fromScoreboard from './reducers/scoreboard.reducer';
 import { SelectorsComponent } from './selectors/selectors.component';
+import { StoreModule, ActionReducer, MetaReducer } from '@ngrx/store';
+
+export function debug(reduce: ActionReducer<any>): ActionReducer<any> {
+  return (state, action) => {
+    console.log('State', state);
+    console.log('action', action);
+
+    return reduce(state, action);
+    
+  }
+}
+
+export const metaReducers: MetaReducer<any>[] = [debug];
 
 @NgModule({
   declarations: [
@@ -30,6 +42,8 @@ import { SelectorsComponent } from './selectors/selectors.component';
       books: booksReducer,
       collections: collectionReducer,
       game: fromScoreboard.reducer
+    }, {
+      metaReducers: metaReducers
     }),
     HttpClientModule
   ],
