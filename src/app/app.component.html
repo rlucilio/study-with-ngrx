@@ -1,8 +1,0 @@
-<app-component-test></app-component-test>
-
-<h2>Books</h2>
-<app-books class="book-list" [books]="books$ | async" (add)="onAdd($event)"></app-books>
-
-<h2>My Collection</h2>
-<app-book-collection class="book-collection" [books]="bookCollection$ | async" (remove)="onRemove($event)">
-</app-book-collection>
