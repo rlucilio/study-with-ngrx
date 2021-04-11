@@ -1,0 +1,46 @@
+<main class="container">
+  <h2>My wishlists:</h2>
+
+  <section *ngIf="toDoError?.message">
+    <p class="alert alert-danger" role="alert">
+      Some error occurred. Please try again
+    </p>
+  </section>
+
+  <ul>
+    <ng-container *ngFor="let toDo of toDoList">
+      <li>
+        <p>Name:</p>
+        <p class="todo-item">{{toDo.title}}</p>
+        <p>isCompleted:</p>
+        <p class="todo-item">{{toDo.isCompleted}}</p>
+      </li>
+    </ng-container>
+  </ul>
+
+  <form (ngSubmit)="createToDo()" class="container form-group" style="margin-left:30px">
+
+    <div class="form-group">
+      <input
+      type="text"
+      [(ngModel)]="title"
+      placeholder="Enter your Wish"
+      class="form-control"
+      name="title"
+      style="min-width: 150px;"/>
+    </div>
+
+    <div class="form-check" style="margin-top:10px; margin-left:30px">
+      <input
+        [(ngModel)]="isCompleted"
+        type="checkbox"
+        class="form-check-input"
+        id="isCompleted"
+        name="isCompleted"/>
+
+      <label for="isCompleted" class="form-check-label">Completed?</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="width: 70px;">Add</button>
+  </form>
+</main>

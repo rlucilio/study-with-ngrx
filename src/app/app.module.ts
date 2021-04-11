@@ -5,6 +5,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
 import { StoreModule } from "@ngrx/store";
 import { cardReducer } from "./simple-ngrx/ngrx/cart.reducers";
+import { toDoReducer } from "./effects/todo.reducer";
+import { TodoEffectsService } from "./effects/todo-effects.service";
+import { EffectsModule } from "@ngrx/effects";
 
 @NgModule({
   declarations: [
@@ -15,13 +18,19 @@ import { cardReducer } from "./simple-ngrx/ngrx/cart.reducers";
     HttpClientModule,
     RouterModule.forRoot([
       {
-        path: 'simple',
+        path: 'store',
         loadChildren: () => import('./simple-ngrx/simple-ngrx.module').then(module => module.SimpleNgrxModule)
+      },
+      {
+        path: 'effects',
+        loadChildren: () => import('./effects/effects.module').then(module => module.EffectsModule)
       }
     ]),
     StoreModule.forRoot({
-      cart: cardReducer
-    })
+      cart: cardReducer,
+      toDos: toDoReducer
+    }),
+    EffectsModule.forRoot([TodoEffectsService])
   ],
   providers: [],
   bootstrap: [AppComponent]
