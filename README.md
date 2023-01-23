@@ -42,7 +42,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ### 🎲 Rodando o Projeto
 ```bash
 # Clone este repositório
-$ git clone https://github.com/rlucilio/study-with-ngrx
+$ git clone https://github.com/rlucilio/study-with-ngrx.git
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd play-with-ngrx
