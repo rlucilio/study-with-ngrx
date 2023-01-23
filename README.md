@@ -45,7 +45,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone https://github.com/rlucilio/study-with-ngrx.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd play-with-ngrx
+$ cd study-with-ngrx
 
 # Instale as dependências
 $ npm install
