@@ -33,7 +33,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <!--te-->
 
 ## :white_check_mark: Funcionalidades
-- [] Implementar todas as funcionalidades
+- [X] Implementar todas as funcionalidades
 ## :computer: Como Rodar
 ### Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
